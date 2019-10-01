@@ -2,6 +2,7 @@
 Realizar un programa en C que determine el área del círculo
 **************************************************************************************************************/
 #include <stdio.h>//Definicion de la biblioteca
+#include <math.h> //Es .h por que es una librería estática
 #define pi 3.1216//Definicion de la constante PI
 
 void main()//Definición de la función principal
@@ -9,6 +10,7 @@ void main()//Definición de la función principal
     float radio,area;//Declaración de variables
     printf("ingrese el radio");//Salida en pantalla
     scanf("%f",&radio);//Lectura de la variable radio
-    area=pi*radio*radio;//Proceso 
-    printf("El area es %f",area);//Salida del valor de la variable area
+    //area=pi*radio*radio;//Proceso 
+    area=pi*pow(radio,2);//Pow se usa para elevar a una potencia incluyendo el <math.h> donde el primero es la base (radio) y el exponente (2)
+    printf("El area es %.1f",area);//Salida del valor de la variable area y el %.1f es para la cantida de decimales
 }//Fin
