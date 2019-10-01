@@ -1,0 +1,42 @@
+/**************************************************************************************************************
+Realizar un programa en C que determine el área del círculo
+**************************************************************************************************************/
+#include <stdio.h>//Definicion de la biblioteca
+
+void main()//Definición de la función principal
+{
+    char nombre[10],descP1[20],descP2[20],cedula[10];//Los corchetes son para marcar la longitud de las palabras
+    float cantP1,cantP2,precioP1,pVtaP1,subtotal=0,iva,total=0,precioP2,pVtaP2;
+    printf("Ingrese el nombre:");
+    scanf("%s",nombre);//Aqui no van los amperson "&" por que el programa sobre entiende cuando se trata de cadena de caracteres
+    printf("Ingrese el cedula");
+    scanf("%s",cedula);
+    printf("Ingrese del producto 1\n");
+    printf("Ingrese la descripcion:");
+    scanf("%s",descP1);
+    printf("Ingrese del precio:");
+    scanf("%f",&precioP1);
+    printf("Ingrese la cantidad:");
+    scanf("%f",&cantP1);
+    printf("Datos del producto 2\n");
+    printf("Ingrese la descripcion:");
+    scanf("%s",descP2);
+    printf("Ingrese del precio:");
+    scanf("%f",&precioP2);
+    printf("Ingrese la cantidad:");
+    scanf("%f",&cantP2);
+    pVtaP1=cantP1*precioP1;
+    pVtaP2=cantP2*precioP2;
+    subtotal=pVtaP1+pVtaP2;
+    iva=subtotal*0.12;
+    total=subtotal+iva;
+    printf("******PRONACA******\n");
+    printf("Cliente:%s\n",nombre);
+    printf("Cedula:%s\n",cedula);
+    printf("Descripcion\tCantidad\tPrecio\t\tPVenta\n");
+    printf("%s\t\t%.2f\t\t%.2f\t\t%.2f\n",descP1,cantP1,precioP1,pVtaP1);
+    printf("%s\t\t%.2f\t\t%.2f\t\t%.2f\n",descP2,cantP2,precioP2,pVtaP2);
+    printf("\t\t\t\tSubtotal:%.2f\n",subtotal);
+    printf("\t\t\t\tIva:%.2f\n",iva);
+    printf("\t\t\t\tTotal:%.2f\n",total);
+}
