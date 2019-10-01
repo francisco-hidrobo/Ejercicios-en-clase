@@ -1,0 +1,14 @@
+/**************************************************************************************************************
+Realizar un programa en C que determine el área del círculo
+**************************************************************************************************************/
+#include <stdio.h>//Definicion de la biblioteca
+#define pi 3.1216//Definicion de la constante PI
+
+void main()//Definición de la función principal
+{//Inicio
+    float radio,area;//Declaración de variables
+    printf("ingrese el radio");//Salida en pantalla
+    scanf("%f",&radio);//Lectura de la variable radio
+    area=pi*radio*radio;//Proceso 
+    printf("El area es %f",area);//Salida del valor de la variable area
+}//Fin
