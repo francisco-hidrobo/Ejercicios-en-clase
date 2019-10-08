@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+void main()
+{
+    int Voto,cantV1,cantV2,cantV3,cantV4,cantV5;
+    float porcV1=0,porcV2=0,porcV3=0,porcV4=0,porcV5=0;
+    printf("Ingrese su voto:");
+    scanf("%d",&voto);
+    if(voto==1)
+        cantV1++;
+    else if(voto==2)
+        cantV2++;
+    else if(voto==3)
+        cantV3++;
+    else if(voto==4)
+        cantV4++;    
+    else if(voto==5)
+        cantV5++;   
+    totalVotos=cantV1+cantV2+cantV3+cantV4+cantV5
+    porcV1=(cantV1/totalVotos)*100
+    porcV2=(cantV2/totalVotos)*100
+    porcV3=(cantV3/totalVotos)*100
+    porcV4=(cantV4/totalVotos)*100
+    porcV5=(cantV5/totalVotos)*100
+    printf("El candidato1 tienne %d votos con un porcentaje de %.2f\n",cantV1,cantV1);
+    printf("El candidato2 tienne %d votos con un porcentaje de %.2f\n",cantV2,cantV2);
+    printf("El candidato3 tienne %d votos con un porcentaje de %.2f\n",cantV3,cantV3);
+    printf("El candidato4 tienne %d votos con un porcentaje de %.2f\n",cantV4,cantV4);
+    printf("El candidato5 tienne %d votos con un porcentaje de %.2f",cantV5,cantV5);
+}
